@@ -1,16 +1,30 @@
-package com.mycompany.livro;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.poo;
 
+/**
+ *
+ * @author AnaBe
+ */
 public class main {
-    public static void main(String[] args) {
-        Livro livro =new Livro ("Good Omens: Belas Maldições", "Neil Gaiman e Terry Pratchett", 2022, 490);
-        Livro livro2 =new Livro ("Cartas a Théo: Rebeldes e Malditos", "Van Gogh", 2021, 456);
-        Livro livro3 =new Livro ("É impossível esquecer o que vivi", "Bruno Gouveia", 2019, 454);
-        Livro livro4 =new Livro ("Beyond The Story Uma história dos 10 anos de BTS", "Myeongseok Kang e BTS", 2023, 527);
-        
-        livro.dadosLivro();
-        livro2.dadosLivro();
-        livro3.dadosLivro();
-        livro4.dadosLivro();
-    }
+    public static void main(String[] args ){
+        POO poo=new POO("CR7", 36, "123456789");
+        /*POO é o objeto da classe POO.
+        poo é a variavel da instancia 
+        new é a invocação da instancia
+        POO("nome", idade, "cpf") parametro
+        */
+        POO poo2=new POO("Messi", 38, "987654321");
+       
+    /*System.out.println("Nome da Pessoa: " +poo.nome);
+    System.out.println("Idade da Pessoas: " +poo.idade);
+    System.out.println("Nome da Pessoas: " +poo2.nome);
+    System.out.println("Idade da Pessoas: " +poo2.idade);
+    */
+    poo.dadosPOO();
+    poo2.dadosPOO();
     
+    }
 }
